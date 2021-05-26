@@ -27,7 +27,9 @@ router.get('/', (req, res, next) => {
     twits,
   });
 });
-
+router.get('/video.html',(req,res,next)=>{
+  res.render("video.html");
+});
 router.get('/Teammates.html',(req,res,next)=>{
   res.render("Teammates.html");
 });
